@@ -1,0 +1,663 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology/"
+     xml:base="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#hasDialect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#hasDialect">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#additionalFeatures -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#additionalFeatures">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first></rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>continuant</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>delayed release</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>lateral</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>strident</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#allophones -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#allophones">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#articulationManner -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#articulationManner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>affricate</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>approximant</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>fricative</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>lateral approximant</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>nasal</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>plosive</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>tap</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>trill</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#backness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#backness">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>back</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>central</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>front</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#coronalType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#coronalType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Coronal"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>alveolar</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>anterior</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>dental</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>distributed</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>postalveolar</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>retroflex</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dorsalType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dorsalType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dorsal"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>palatal</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>uvular</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>velar</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#height">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>high</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>low</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>mid</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#labialType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#labialType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Labial"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>bilabial</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>labiodental</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#laryngealType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#laryngealType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first></rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>advanced tongue root</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>constricted glottis</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>epilaryngeal source</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>fortis</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>glottal</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>lenis</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>lowered larnyx implosive</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>periodic glottal source</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first>raised larnyx ejective</rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first>retracted tongue root</rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first>spread glottis</rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                        <rdf:first>tense</rdf:first>
+                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#length -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#length">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>long</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>short</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#roundedness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#roundedness">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>rounded</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>unrounded</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#symbol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#symbol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#voicing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#voicing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>unvoiced</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>voiced</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Coronal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Coronal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dorsal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dorsal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Labial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Labial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Coronal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dorsal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Labial"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
