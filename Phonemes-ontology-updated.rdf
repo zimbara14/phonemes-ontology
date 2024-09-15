@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology/"
+     xml:base="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#hasDialect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#hasDialect">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#airstreamMechanism -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#airstreamMechanism">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#allophones -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#allophones">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#articulationManner -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#articulationManner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#articulationPlace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#articulationPlace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#backness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#backness">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#dialectRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#height">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#isAspirated -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#isAspirated">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#isRounded -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#isRounded">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#isVoiced -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#isVoiced">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#languageRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#length -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#length">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#sonority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#sonority">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#symbol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#symbol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#tension -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#tension">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Consonant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Dialect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Vowel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zimbara/ontologies/2024/6/phonemes-ontology#Phoneme"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
